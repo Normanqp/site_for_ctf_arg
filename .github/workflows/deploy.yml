@@ -50,3 +50,5 @@ jobs:
           REMOTE_PORT: ${{ secrets.DEPLOY_PORT }}
           REMOTE_USER: ${{ secrets.DEPLOY_USER }}
           TARGET: ${{ secrets.DEPLOY_TARGET }}
+          SCRIPT_AFTER: supervisorctl restart task
+
