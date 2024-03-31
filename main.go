@@ -43,6 +43,5 @@ func main() {
 
 	mux.HandleFunc("/", handleRequests)
 	mux.HandleFunc("/index", CheckRequests)
-	mux.HandleFunc("/main", MainRequests)
 	http.ListenAndServe(":"+port, mux)
 }
