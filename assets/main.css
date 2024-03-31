@@ -1,0 +1,25 @@
+body{
+    background: rgb(19, 18, 18);
+}
+h1{
+    font-family: 'Arial', 'Cambria','Trebuchet MS','Segoe Print', 'Calibri', 'Ebrima', 'Nirmala UI', 'Ebrima'
+}
+
+p{
+    font-size: 24px;
+    text-align: center;
+}
+
+.task{
+    font-family: 'Arial';
+    text-align: center;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    width: 70%;
+   
+}
