@@ -24,9 +24,6 @@ func CheckRequests(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "wrong username or password")
 	}
 }
-func MainRequests(w http.ResponseWriter, r *http.Request) {
-	http.ServeFile(w, r, "main.html")
-}
 
 func main() {
 	port := os.Getenv("PORT")
