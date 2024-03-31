@@ -19,7 +19,7 @@ func CheckRequests(w http.ResponseWriter, r *http.Request) {
 	password := r.FormValue("password")
 
 	if username == "human?" && password == "Fade" {
-		http.Redirect(w, r, "/main", http.StatusSeeOther)
+		http.ServeFile(w, r, "main.html")
 	} else {
 		fmt.Fprintf(w, "wrong username or password")
 	}
